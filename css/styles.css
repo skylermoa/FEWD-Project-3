@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    background-color: rgb(31, 41, 75);
+    color: rgb(241, 241, 241);
+    padding: 1em 0;
+}
+
+header,
+.intro {
+    text-align: center;
+}
+
+.intro {
+    padding: 20px 0;
+    border-bottom: 5px solid rgb(80, 80, 80);
+}
+
+h1 {
+    font-size: 1.25em;
+}
+
+form {
+    border-top: 3px solid rgb(80, 80, 80);
+    padding: 10px 20px 40px;
+    margin: 3px 0;
+    background-color: rgb(201, 220, 248);    
+}
+
+legend {
+    font-size: 1.25em; 
+    font-weight: bold;
+    padding: 25px 0;
+    color: rgb(31, 41, 75);
+}
+
+h2 {
+    color: rgb(80, 80, 80);
+    font-size: 1.3em;
+}
+
+p {
+    color: rgb(151, 151, 151);
+}
+
+main {
+    margin: 0 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+.contact {
+    border-bottom: 3px solid rgb(80, 80, 80);
+    padding: 0 0 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    padding: 15px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 5px;
+    color: rgb(100, 100, 100);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(255, 253, 136);
+    transition: background-color .5s ease-in;
+}
+
+#zip {
+    width: 50%;
+}
+
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+}
+
+.flex-item label {
+    padding-left: 10px;
+}
+
+label {
+    color: rgb(100, 100, 100);
+}
+
+.newsletter .flex-container {
+    margin: 20px 0;
+}
+
+.newsletter {
+    margin-top: 20px;
+}
+
+.newsletter legend {
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 1.3em;
+    width: 100%;
+    padding: 30px 0;
+    border: none;
+    background-color: rgb(22, 170, 145);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+   main,
+   footer {
+       width: 50%;
+       margin: 0 auto; 
+   }
+
+    .contact .flex-container {
+       flex-direction: row;
+       align-items: center;
+   }
+
+   .contact .flex-container label {
+       width: 25%;
+   }
+
+   .contact .flex-container input,
+   .contact .flex-container select {
+       width: 75%;
+   }
+
+   #zip {
+       width: 30%;
+   }
+}
