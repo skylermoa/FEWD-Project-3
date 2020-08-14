@@ -1,2 +1,2 @@
-# FEWD-Project-3
+# fewd_project_3
  An Online Registration Form
